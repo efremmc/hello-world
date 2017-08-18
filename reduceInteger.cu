@@ -25,6 +25,7 @@ int recursiveReduce(int *data, int const size)
     }
 
     // call recursively
+	// Check for initial value on exit
     return recursiveReduce(data, stride);
 }
 
