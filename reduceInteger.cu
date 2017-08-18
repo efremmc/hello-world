@@ -21,7 +21,7 @@ int recursiveReduce(int *data, int const size)
     // in-place reduction
     for (int i = 0; i < stride; i++)
     {
-        data[i] += data[i + stride];
+        data[i] += data[i + stride];  // calculate new reduction
     }
 
     // call recursively
