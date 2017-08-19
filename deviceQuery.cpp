@@ -67,6 +67,8 @@ main(int argc, char **argv)
         printf("Result = FAIL\n");
         exit(EXIT_FAILURE);
     }
+	
+	printf("CUDA device count is %d\n\n", deviceCount);
 
     // This function call returns 0 if there are no CUDA capable devices.
     if (deviceCount == 0)
